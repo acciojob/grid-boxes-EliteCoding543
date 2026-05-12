@@ -14,8 +14,9 @@
     }
 
     body{
-      background: white;
+      background-color: white;
       padding: 10px;
+      font-family: Arial, sans-serif;
     }
 
     /* ================= GRID CONTAINER ================= */
@@ -25,7 +26,7 @@
 
       grid-template-columns: repeat(4, 1fr);
 
-      grid-template-rows: 180px 180px 180px 180px 180px;
+      grid-template-rows: repeat(5, 180px);
 
       gap: 10px;
     }
@@ -42,15 +43,15 @@
       padding: 15px;
     }
 
-    /* ================= GRID POSITIONS ================= */
+    /* ================= GRID ITEMS ================= */
 
     .box1{
       grid-column: 1 / 5;
     }
 
     .box2{
-      grid-row: 2 / 6;
       grid-column: 1 / 2;
+      grid-row: 2 / 6;
     }
 
     .box3{
